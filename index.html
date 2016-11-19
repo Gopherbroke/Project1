@@ -17,176 +17,52 @@
         Select targets from from the grid. Their carrier will require 3 torpedoes to sink, <br>
         the battleship, and submarine take two apeice. Good luck Sailor!
       </p>
+      <div id="ammo" onclick="torpedoes()">You have 16 torpedoes remaining. </div>
 
-      <table align="center">
+      <table id="board" align="center">
     <tr>
-      <td id="1" onclick="myMove(1)">A1</td>
-      <td id="2" onclick="myMove(2)">B1</td>
-      <td id="3" onclick="myMove(3)">C1</td>
-      <td id="4" onclick="myMove(4)">D1</td>
-      <td id="5" onclick="myMove(5)">E1</td>
-    </tr>
-    <tr>
-      <td id="6" onclick="myMove(6)">A2</td>
-      <td id="7" onclick="myMove(7)">B2</td>
-      <td id="8" onclick="myMove(8)">C2</td>
-      <td id="9" onclick="myMove(9)">D2</td>
-      <td id="10" onclick="myMove(10)">E2</td>
+      <td class="space" id="1" onclick="myMove(1)">A1</td>
+      <td class="space" id="2" onclick="myMove(2)">B1</td>
+      <td class="space" id="3" onclick="myMove(3)">C1</td>
+      <td class="space" id="4" onclick="myMove(4)">D1</td>
+      <td class="space" id="5" onclick="myMove(5)">E1</td>
     </tr>
     <tr>
-      <td id="11" onclick="myMove(11)">A3</td>
-      <td id="12" onclick="myMove(12)">B3</td>
-      <td id="13" onclick="myMove(13)">C3</td>
-      <td id="14" onclick="myMove(14)">D3</td>
-      <td id="15" onclick="myMove(15)">E3</td>
+      <td class="space" id="6" onclick="myMove(6)">A2</td>
+      <td class="space" id="7" onclick="myMove(7)">B2</td>
+      <td class="space" id="8" onclick="myMove(8)">C2</td>
+      <td class="space" id="9" onclick="myMove(9)">D2</td>
+      <td class="space" id="10" onclick="myMove(10)">E2</td>
     </tr>
-      <td id="16" onclick="myMove(16)">A4</td>
-      <td id="17" onclick="myMove(17)">B4</td>
-      <td id="18" onclick="myMove(18)">C4</td>
-      <td id="19" onclick="myMove(19)">D4</td>
-      <td id="20" onclick="myMove(20)">E4</td>
+    <tr>
+      <td class="space" id="11" onclick="myMove(11)">A3</td>
+      <td class="space" id="12" onclick="myMove(12)">B3</td>
+      <td class="space" id="13" onclick="myMove(13)">C3</td>
+      <td class="space" id="14" onclick="myMove(14)">D3</td>
+      <td class="space" id="15" onclick="myMove(15)">E3</td>
     </tr>
-      <td id="21" onclick="myMove(21)">A5</td>
-      <td id="22" onclick="myMove(22)">B5</td>
-      <td id="23" onclick="myMove(23)">C5</td>
-      <td id="24" onclick="myMove(24)">D5</td>
-      <td id="25" onclick="myMove(25)">E5</td>
+      <td class="space" id="16" onclick="myMove(16)">A4</td>
+      <td class="space" id="17" onclick="myMove(17)">B4</td>
+      <td class="space" id="18" onclick="myMove(18)">C4</td>
+      <td class="space" id="19" onclick="myMove(19)">D4</td>
+      <td class="space" id="20" onclick="myMove(20)">E4</td>
+    </tr>
+      <td class="space" id="21" onclick="myMove(21)">A5</td>
+      <td class="space" id="22" onclick="myMove(22)">B5</td>
+      <td class="space" id="23" onclick="myMove(23)">C5</td>
+      <td class="space" id="24" onclick="myMove(24)">D5</td>
+      <td class="space" id="25" onclick="myMove(25)">E5</td>
     </tr>
   </table>
-      <!--<section class="container">
-        <div class="col-2">
-          <h2 class-'A1'>A1</h2>
+
+  <button id='reset'>New Game</button>
+
         </div>
 
-        <div class="col-2">
-          <h2 class-'B1'>B1</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'C1'>C1</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'D1'>D1</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'E1'>E1</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'A2'>A2</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'B2'>B2</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'C2'>C2</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'D2'>D2</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'E2'>E2</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'A3'>A3</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'B3'>B3</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'C3'>C3</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'D3'>D3</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'E3'>E3</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'A4'>A4</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'B4'>B4</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'C4'>C4</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'D4'>D4</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'E4'>E4</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'A5'>A5</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'B5'>B5</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'C5'>C5</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'D5'>D5</h2>
-        </div>
-
-        <div class="col-2">
-          <h2 class-'E5'>E5</h2>
-        </div> -->
-
-
-        <!--<article class="recipe">
-          <!__<button id=5>A1</button>
-          <button>B1</button>
-          <button>C1</button>
-          <button>D1</button>
-          <button>E1</button>
-          <button>A2</button>
-          <button>B2</button>
-          <button>C2</button>
-          <button>D2</button>
-          <button>E2</button>
-          <button>A3</button>
-          <button>B3</button>
-          <button>C3</button>
-          <button>D3</button>
-          <button>E3</button>
-          <button>A4</button>
-          <button>B4</button>
-          <button>C4</button>
-          <button>D4</button>
-          <button>E4</button>
-          <button>A5</button>
-          <button>B5</button>
-          <button>C5</button>
-          <button>D5</button>
-          <button>E5</button>-->
-
-
-        <!--</article>-->
-        </div>
-
-
-
+        <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous"></script>
+            <script src="app.js" charset="utf-8"></script>
   </body>
 </html>
