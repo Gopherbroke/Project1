@@ -7,17 +7,28 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <h1>Battleship</h1>
+    <h1>BATTLESHIP</h1>
     <p id='subheading'>This will become a sub-heading... once i remember how that works</p>
     <div>
-      <h2>Instructions</h2>
+
+      <button class="accordion">Instructions</button>
+      <div class="panel">
+        <p>Your opponent has three ships that are about to attack your position. If you're able to sink all their vessels before you run out of torpedoes and you will save the Pacific fleet.
+        Select your targets from from the grid. Their carrier will require 4 torpedoes to sink, the battleship 3, and the submarine will take two. Good luck Sailor!</p>
+      </div>
+
+
+    <!--  <h2>Instructions</h2>
       <p>
         Your opponent has three ships that are about to attack your position, you need to fuck their shit right up!<br>
         Sink all their vessels before you run out of torpedoes and you will save the Pacifici fleet. <br>
         Select targets from from the grid. Their carrier will require 3 torpedoes to sink, <br>
         the battleship, and submarine take two apeice. Good luck Sailor!
-      </p>
+      </p> -->
       <div id="ammo" onclick="torpedoes()">You have 16 torpedoes remaining. </div>
+      <br>
+      <br>
+      <div id="gameFeedback"></div>
 
       <table id="board" align="center">
     <tr>
@@ -55,8 +66,8 @@
     </tr>
   </table>
 
-  <button id='reset'>New Game</button>
-
+  <!--<button id='reset'>New Game</button>-->
+  <FORM><INPUT TYPE="button" onClick="history.go(0)" VALUE="Restart game"></FORM></INPUT>
         </div>
 
         <script
