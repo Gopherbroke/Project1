@@ -2,10 +2,11 @@
 var shipsFound = 0;
 var guess;
 var box;
+var scream = "Wilhelm-Scream.mp3";
 
 //var ship1 = #1;
 var myMove = function() {
-
+audio.src =  sink;
 }
 while (ship1 == ship2 || ship2 == ship3 || ship1 == ship3) {
   // Using three variables to save our ship positions
@@ -43,15 +44,17 @@ for(var i = 0; i < boxes.length; i++) {
         this.style.color = "red";
         shipsFound++;
         if (shipsFound === 3) {
-              $("#gameFeedback").html("You Win!");
+              $("#gameFeedback").html("You Win!<br>");
+              $("#gameHistory").prepend("You Win!<br>");
         } else {
-          $("#gameFeedback").html("That's a hit!");
+          $("#gameFeedback").html("That's a hit!<br>");
+          $("#gameHistory").prepend("That's a hit!<br>");
         };
     }
     else {
         this.style.backgroundColor = "grey";
-        $("#gameFeedback").html("Miss");
-
+        $("#gameFeedback").html("Miss<br>");
+        $("#gameHistory").prepend("Miss!<br>");
   }
 }
 }

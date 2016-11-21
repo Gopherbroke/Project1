@@ -17,6 +17,11 @@
         Select your targets from from the grid. Their carrier will require 4 torpedoes to sink, the battleship 3, and the submarine will take two. Good luck Sailor!</p>
       </div>
 
+      <audio controls>
+  <source src="Wilhelm-Scream.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+
 
     <!--  <h2>Instructions</h2>
       <p>
@@ -28,44 +33,49 @@
       <div id="ammo" onclick="torpedoes()">You have 16 torpedoes remaining. </div>
       <br>
       <br>
-      <div id="gameFeedback"></div>
-
-      <table id="board" align="center">
-    <tr>
-      <td class="space" id="1" onclick="myMove(1)">A1</td>
-      <td class="space" id="2" onclick="myMove(2)">B1</td>
-      <td class="space" id="3" onclick="myMove(3)">C1</td>
-      <td class="space" id="4" onclick="myMove(4)">D1</td>
-      <td class="space" id="5" onclick="myMove(5)">E1</td>
-    </tr>
-    <tr>
-      <td class="space" id="6" onclick="myMove(6)">A2</td>
-      <td class="space" id="7" onclick="myMove(7)">B2</td>
-      <td class="space" id="8" onclick="myMove(8)">C2</td>
-      <td class="space" id="9" onclick="myMove(9)">D2</td>
-      <td class="space" id="10" onclick="myMove(10)">E2</td>
-    </tr>
-    <tr>
-      <td class="space" id="11" onclick="myMove(11)">A3</td>
-      <td class="space" id="12" onclick="myMove(12)">B3</td>
-      <td class="space" id="13" onclick="myMove(13)">C3</td>
-      <td class="space" id="14" onclick="myMove(14)">D3</td>
-      <td class="space" id="15" onclick="myMove(15)">E3</td>
-    </tr>
-      <td class="space" id="16" onclick="myMove(16)">A4</td>
-      <td class="space" id="17" onclick="myMove(17)">B4</td>
-      <td class="space" id="18" onclick="myMove(18)">C4</td>
-      <td class="space" id="19" onclick="myMove(19)">D4</td>
-      <td class="space" id="20" onclick="myMove(20)">E4</td>
-    </tr>
-      <td class="space" id="21" onclick="myMove(21)">A5</td>
-      <td class="space" id="22" onclick="myMove(22)">B5</td>
-      <td class="space" id="23" onclick="myMove(23)">C5</td>
-      <td class="space" id="24" onclick="myMove(24)">D5</td>
-      <td class="space" id="25" onclick="myMove(25)">E5</td>
-    </tr>
-  </table>
-
+      <div id="flexContainer">
+        <div id="gameUpdates">
+          <div id="gameFeedback"><p>Your shot:<p>---</div>
+          <div id="gameHistory">---<p><b>History.</b></p></div>
+        </div>
+        <div id="tableDiv">
+        <table id="board" align="center">
+      <tr>
+        <td class="space" id="1" onclick="myMove(1)">A1</td>
+        <td class="space" id="2" onclick="myMove(2)">B1</td>
+        <td class="space" id="3" onclick="myMove(3)">C1</td>
+        <td class="space" id="4" onclick="myMove(4)">D1</td>
+        <td class="space" id="5" onclick="myMove(5)">E1</td>
+      </tr>
+      <tr>
+        <td class="space" id="6" onclick="myMove(6)">A2</td>
+        <td class="space" id="7" onclick="myMove(7)">B2</td>
+        <td class="space" id="8" onclick="myMove(8)">C2</td>
+        <td class="space" id="9" onclick="myMove(9)">D2</td>
+        <td class="space" id="10" onclick="myMove(10)">E2</td>
+      </tr>
+      <tr>
+        <td class="space" id="11" onclick="myMove(11)">A3</td>
+        <td class="space" id="12" onclick="myMove(12)">B3</td>
+        <td class="space" id="13" onclick="myMove(13)">C3</td>
+        <td class="space" id="14" onclick="myMove(14)">D3</td>
+        <td class="space" id="15" onclick="myMove(15)">E3</td>
+      </tr>
+        <td class="space" id="16" onclick="myMove(16)">A4</td>
+        <td class="space" id="17" onclick="myMove(17)">B4</td>
+        <td class="space" id="18" onclick="myMove(18)">C4</td>
+        <td class="space" id="19" onclick="myMove(19)">D4</td>
+        <td class="space" id="20" onclick="myMove(20)">E4</td>
+      </tr>
+        <td class="space" id="21" onclick="myMove(21)">A5</td>
+        <td class="space" id="22" onclick="myMove(22)">B5</td>
+        <td class="space" id="23" onclick="myMove(23)">C5</td>
+        <td class="space" id="24" onclick="myMove(24)">D5</td>
+        <td class="space" id="25" onclick="myMove(25)">E5</td>
+      </tr>
+    </table>
+    </div>
+  </div>
   <!--<button id='reset'>New Game</button>-->
   <FORM><INPUT TYPE="button" onClick="history.go(0)" VALUE="Restart game"></FORM></INPUT>
         </div>
