@@ -1,36 +1,62 @@
+
+
 body {
-  /*background-image: url("battleship-grid-pic.png");
-  background-size: cover;*/
-  /*background-color: black;
-  color: green;*/
-  font-size: 15px;
-  font-family: 'Exo 2', sans-serif;
+  background-color: rgb(6, 24, 6);
+  color: rgb(14, 205, 14);
+  font-size: 25px;
+  font-family: 'Machine Bold', sans-serif;
   font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+}
+h1 {
+  font-size: 60px;
 }
 table td {
   border: solid 4px;
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   text-align: center;
 }
+#startButton{
+  color: rgb(14, 205, 14);
+  font-size: 25px;
+  font-family: 'Machine Bold', sans-serif;
+  background-color: rgb(62, 69, 62);
+}
+#reset {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  width: 90px;
+  height: 60px;
 
+}
 #gameUpdates {
   display: flex;
   justify-content: space-between;
 }
 #flexContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;;
 }
-#gameFeedback, #gameHistory, #tableDiv {
+#gameFeedback, #tableDiv {
   display: inline-block;
 }
 #gameFeedback {
-  width: 100px;
-  color: red;
+  font-size: 25px;
+  width: 300px;
+  color: rgb(14, 205, 14);
 }
-#gameHistory {
-  width: 100px;
+
+#gameFeedback p:nth-child(1) {
+  color: red
+}
+
+
+#gfhl {
+  color: rgb(14, 205, 14);
 }
 
 .container {
@@ -38,48 +64,34 @@ table td {
 }
 
 button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  font-family: 'Machine Bold', sans-serif;
+  font-size: 20px;
+  background-color: rgb(62, 69, 62);
+  color: rgb(14, 205, 14);
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
 }
 
 button.accordion.active {
-    background-color: #ddd;
+  background-color: rgb(62, 69, 62);
 }
 
 div.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
+  padding: 10px;
+  background-color: rgb(62, 69, 62);
+  display: none;
 }
 
 div.panel.show {
-    display: block;
+  display: block;
 }
 
 [class*="col-"] {
   display: inline-block;
-/*    float: left;
-  padding: 15px;
-  border: 1px solid red; */
+
 }
-/*
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-*/

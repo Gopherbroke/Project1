@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Project 1</title>
-    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">-->
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
     <h1>BATTLESHIP</h1>
-    <p id='subheading'>This will become a sub-heading... once i remember how that works</p>
     <div>
 
       <button class="accordion">Instructions</button>
@@ -17,26 +15,16 @@
         Select your targets from from the grid. Their carrier will require 4 torpedoes to sink, the battleship 3, and the submarine will take two. Good luck Sailor!</p>
       </div>
 
-      <audio controls>
-  <source src="Wilhelm-Scream.mp3" type="audio/mp3">
-Your browser does not support the audio element.
-</audio>
+      <audio id="scream">
+        <source src=Wilhelm-Scream.mp3 type="audio/mp3">
 
+        </audio>
 
-    <!--  <h2>Instructions</h2>
-      <p>
-        Your opponent has three ships that are about to attack your position, you need to fuck their shit right up!<br>
-        Sink all their vessels before you run out of torpedoes and you will save the Pacifici fleet. <br>
-        Select targets from from the grid. Their carrier will require 3 torpedoes to sink, <br>
-        the battleship, and submarine take two apeice. Good luck Sailor!
-      </p> -->
       <div id="ammo" onclick="torpedoes()">You have 16 torpedoes remaining. </div>
-      <br>
-      <br>
+
       <div id="flexContainer">
         <div id="gameUpdates">
-          <div id="gameFeedback"><p>Your shot:<p>---</div>
-          <div id="gameHistory">---<p><b>History.</b></p></div>
+          <div id="gameFeedback"><h4 id="gfhl">Your shot:</h4></div>
         </div>
         <div id="tableDiv">
         <table id="board" align="center">
@@ -76,8 +64,9 @@ Your browser does not support the audio element.
     </table>
     </div>
   </div>
-  <!--<button id='reset'>New Game</button>-->
-  <FORM><INPUT TYPE="button" onClick="history.go(0)" VALUE="Restart game"></FORM></INPUT>
+  <FORM id="reset">
+    <INPUT id="startButton" TYPE="button" onClick="history.go(0)" VALUE="Restart Game">
+    </FORM></INPUT>
         </div>
 
         <script
